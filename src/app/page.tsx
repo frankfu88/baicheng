@@ -21,17 +21,16 @@ export default function Home() {
         </h2>
         <div className="bg-white shadow-xl rounded-xl p-8 mt-6">
           <p className="text-lg text-gray-700 leading-relaxed">
-            名仁動物醫院位於屏東市中心，由一群熱愛動物、經驗豐富的獸醫師團隊所創立，致力於提供細緻、專業且具溫度的寵物醫療服務。院內醫師長期投入犬貓臨床照護，擅長內外科、心臟超音波、急重症處理及預防醫學等多元領域。
+            宏愛動物醫院秉持「人性化、現代化、專業化」的理念，以專業的手與誠摯的心，守護每一位毛孩的健康。作為犬貓專科醫院，我們致力於提供最優質、最全面的醫療照護，讓飼主與寵物都能感受到信賴與安心。
             <br /><br />
-            我們相信，醫療不該只是治療，更是一種理解與陪伴。名仁以「仁心仁術」為核心理念，關心毛孩健康，也重視與飼主的溝通與信任，力求每一次診療都能讓飼主安心、讓毛孩放鬆。
+            本院由前軍犬中心獸醫師領軍，專精於犬貓泌尿道疾病、骨盆與脊椎手術，涵蓋內科、外科、眼科、牙科、皮膚科等多項領域，亦擅長呼吸道治療與心肺復甦術。特別設有犬病毒性腸炎、心絲蟲與血液寄生蟲等專科診療，提供精準且高效率的治療方案。
             <br /><br />
-            醫院配備先進設備，包括數位X光、心臟與腹部超音波、全自動血液檢驗儀、麻醉監控系統，以及犬貓分離住院區，確保診療品質與動物安全。服務項目涵蓋一般診療、健康檢查、疫苗注射、結紮手術、皮膚病治療、慢性病追蹤與急診處理等。
+            院內設有24小時夜間急診與住院服務，並附設寵物美容部、旅館部及百貨用品區，滿足毛孩日常生活與健康需求。同時，宏愛亦為政府指定之寵物識別晶片植入醫院，確保您的毛孩擁有完善的身份識別與安全保障。
             <br /><br />
-            名仁動物醫院採預約優先制度，減少等待時間，提升就診效率。我們也提供夜間診療，陪伴每一位毛孩度過健康的每一天。
-            <br /><br />
-            在名仁，我們不只是醫療團隊，更是您與毛孩生命旅程中的守護者與夥伴，期待與您一同見證毛孩的成長與幸福。
+            我們深信，醫療服務不僅是治療，更是一段陪伴與理解的旅程。宏愛團隊珍視與飼主的溝通，將每一次看診視為守護生命的承諾，期盼與您攜手共築毛孩幸福的每一天。
           </p>
         </div>
+
 
         {/* 🔹 我們的優勢 */}
         <div className="bg-white shadow-xl rounded-xl p-8 mt-12">
@@ -40,10 +39,10 @@ export default function Home() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mt-6">
             {[
-              { title: "隔離病房", description: "提供安全的隔離環境，有效防止傳染病擴散。" },
-              { title: "犬貓重症ICU病房", description: "專業監護設備，24 小時照護危重動物。" },              
-              { title: "諾亞高壓氧保養", description: "透過高壓氧艙提升細胞含氧量，加速術後癒合、改善炎症與慢性疼痛。" },
-              { title: "寵物保險指定醫院", description: "支援多種寵物保險，減輕您的醫療負擔。" }
+              { title: "專業犬貓泌尿與脊椎外科", description: "由前軍犬中心獸醫師親自診治，專精泌尿系統與骨盆脊椎手術，臨床經驗豐富。" },
+              { title: "24 小時急診與住院", description: "全年無休急診與夜間住院照護，讓您的毛孩隨時都有人守護。" },
+              { title: "一站式寵物服務", description: "集醫療、美容、旅館與百貨於一體，便利飼主照護毛孩的全方位需求。" },
+              { title: "諾亞高壓氧保養", description: "透過高壓氧艙提升細胞含氧量，加速術後癒合、改善炎症與慢性疼痛。" }
             ].map((advantage, index) => (
               <div key={index} className="bg-[#F5F1ED] shadow-md rounded-xl p-6 text-lg text-center">
                 <h3 className="text-xl font-bold text-[#5A4032] flex items-center justify-center gap-2">
@@ -82,8 +81,6 @@ export default function Home() {
         </div>
       </section>
 
-      
-
       {/* 🔹 主治項目 */}
       <section id="services" className="max-w-6xl mx-auto py-16 px-6 text-center bg-[#9D8575] text-white shadow-xl rounded-xl">
         <h2 className="text-4xl font-bold flex items-center justify-center gap-2">
@@ -92,41 +89,21 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10 text-left">
           {[
             {
-              label: "急診服務",
-              treatments: ["我們提供緊急急救與急診服務，隨時隨地照顧您寵物的健康需求。"],
+              label: "寵物醫療",
+              treatments: ["提供內科、外科、眼科、牙科、皮膚科等全方位診療服務，守護毛孩健康。"],
             },
             {
-              label: "一般健康檢查",
-              treatments: ["定期的健康檢查是保持寵物健康的關鍵，為您的寵物進行全面的檢查與健康建議。"],
+              label: "寵物保健",
+              treatments: ["從疫苗、驅蟲、健康檢查到慢性病追蹤，打造全面的健康管理計畫。"],
             },
             {
-              label: "手術與內外科服務",
-              treatments: ["我們配備專業的手術團隊，為寵物提供各種外科手術和內科治療。"],
+              label: "寵物美容",
+              treatments: ["提供洗澡、剪毛、專業造型等美容服務，讓毛孩清爽又舒適。"],
             },
             {
-              label: "牙科護理",
-              treatments: ["牙齒健康與整體健康息息相關，服務包括牙齒檢查、清潔和治療。"],
-            },
-            {
-              label: "住院治療",
-              treatments: ["需要更長期觀察和治療的病例，提供舒適的住院環境，確保寵物獲得良好的照顧。"],
-            },
-            {
-              label: "結紮手術",
-              treatments: ["結紮手術有助於控制寵物的繁殖，同時帶來健康和行為上的好處。"],
-            },
-            {
-              label: "預防注射",
-              treatments: ["定期的預防注射是防範常見疾病的有效方式。"],
-            },
-            {
-              label: "驅蟲治療",
-              treatments: ["我們提供各種驅蟲產品和治療方案，確保寵物免受寄生蟲的困擾。"],
-            },
-            {
-              label: "晶片植入",
-              treatments: ["為您的寵物提供獨特的身份識別碼，以增加尋找失踪寵物的成功率。"],
-            },
+              label: "寵物百貨",
+              treatments: ["精選寵物日常用品與營養食品，滿足毛孩生活所需。"],
+            }
           ].map((service, index) => (
             <div
               key={index}
@@ -171,35 +148,38 @@ export default function Home() {
           <div className="text-lg flex flex-col items-center gap-2">
             <p className="flex items-center gap-2">
               <FaMapMarkerAlt className="text-blue-500" />
-              地址：900屏東縣屏東市仁愛路7號
+              地址：701台南市東區東寧路331號
             </p>
             <p className="flex items-center gap-2">
               <FaPhone className="text-green-500" />
-              電話：08-7512022
+              電話：06-2385816
             </p>
-            {/* <p className="flex items-center gap-1 whitespace-nowrap">
+            <p className="flex items-center gap-1 whitespace-nowrap">
               <span>LINE線上諮詢：</span>
               <a
-                href="https://line.me/R/ti/p/@dyi0676c"
+                href="https://line.me/R/ti/p/@kkp1060t"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-700 underline hover:text-blue-900 transition"
               >
-                @dyi0676c
+                @kkp1060t
               </a>
-            </p> */}
+            </p>
           </div>
 
           {/* 門診時間 */}
           <div className="mt-6 flex flex-col md:flex-row justify-center gap-12">
             <div className="flex-1 text-lg text-gray-800">
               <h3 className="text-2xl font-bold text-[#5A4032] mb-4">門診時間</h3>
-              <p className="leading-relaxed mb-1">早上 9 點 至 中午 12 點</p>
-              <p className="leading-relaxed mb-1">下午 2 點 至 晚上 6 點</p>
-              <p className="leading-relaxed mb-1">晚上 7 點 至 晚上 9 點，<span className="font-semibold">急診：</span>晚上 9 點 ~ 11 點</p>
-              <p className="leading-relaxed mt-4 text-red-700 font-bold">
-                禮拜三下午 4 點後休診、晚上休診
-              </p>
+              <ul className="leading-relaxed space-y-1">
+                <li>星期一：10:30 – 20:00</li>
+                <li>星期二：10:30 – 20:00</li>
+                <li>星期三：10:30 – 20:00</li>
+                <li>星期四：10:30 – 20:00</li>
+                <li>星期五：10:30 – 20:00</li>
+                <li>星期六：10:30 – 20:00</li>
+                <li className="text-red-700 font-bold">星期日：休息</li>
+              </ul>
             </div>
           </div>
 
@@ -208,9 +188,9 @@ export default function Home() {
         {/* 🔹 Google 地圖嵌入 */}
         <div className="w-full flex justify-center mt-8">
           <iframe
-            title="Google Maps - 名仁動物醫院"
+            title="Google Maps - 宏愛動物醫院"
             className="w-full max-w-[1100px] h-[450px] rounded-lg shadow-lg border-0"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3681.615667599654!2d120.49100179999998!3d22.668113899999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e1744823847a9%3A0xd80774b4e42c060!2z5ZCN5LuB5YuV54mp6Yar6Zmi772c5aSc6ZaT5a-154mp5oCl6Ki6LOiyk-eLl-e1kOe0rizpqYXon7Is5qSN5YWl5pm254mH!5e0!3m2!1szh-TW!2stw!4v1750127951127!5m2!1szh-TW!2stw"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.91216180514!2d120.2278546!3d22.9902573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e77f00a3c3c5d%3A0x9374c24e03593dff!2z5a6P5oSb5YuV54mp6Yar6ZmiLeeKrOiyk-WwiOenkemGq-eZguOAgeeKrOiyk-e-juWuueOAgeeKrOiyk-iXpeWxgO-8iOaXqeS4iuaZguauteeci-iouu-8jOiri-WFiOaPkOWJjemgkOe0hO-8iQ!5e0!3m2!1szh-TW!2stw!4v1750209555840!5m2!1szh-TW!2stw"
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
