@@ -20,17 +20,14 @@ export default function Home() {
           <FaPaw className="text-yellow-500" /> 關於我們
         </h2>
         <div className="bg-white shadow-xl rounded-xl p-8 mt-6">
-          <p className="text-lg text-gray-700 leading-relaxed">
-            宏愛動物醫院秉持「人性化、現代化、專業化」的理念，以專業的手與誠摯的心，守護每一位毛孩的健康。作為犬貓專科醫院，我們致力於提供最優質、最全面的醫療照護，讓飼主與寵物都能感受到信賴與安心。
+         <p className="text-lg text-gray-700 leading-relaxed">
+            佰成動物醫院致力於為每一位需要協助的毛孩提供最專業、最細緻的醫療照護。我們秉持著尊重生命的初心，期望每一次門診都能帶給毛孩真正的幫助與改善，協助牠們邁向更健康、更有品質的生活。
             <br /><br />
-            本院由前軍犬中心獸醫師領軍，專精於犬貓泌尿道疾病、骨盆與脊椎手術，涵蓋內科、外科、眼科、牙科、皮膚科等多項領域，亦擅長呼吸道治療與心肺復甦術。特別設有犬病毒性腸炎、心絲蟲與血液寄生蟲等專科診療，提供精準且高效率的治療方案。
+            為實現這個目標，我們重視與飼主及毛孩之間的信任與溝通，並努力建立長期且穩定的醫療夥伴關係。透過醫師的專業判斷與用心關懷，讓每一次就診不僅是治療，更是一段攜手守護生命的旅程。
             <br /><br />
-            院內設有24小時夜間急診與住院服務，並附設寵物美容部、旅館部及百貨用品區，滿足毛孩日常生活與健康需求。同時，宏愛亦為政府指定之寵物識別晶片植入醫院，確保您的毛孩擁有完善的身份識別與安全保障。
-            <br /><br />
-            我們深信，醫療服務不僅是治療，更是一段陪伴與理解的旅程。宏愛團隊珍視與飼主的溝通，將每一次看診視為守護生命的承諾，期盼與您攜手共築毛孩幸福的每一天。
+            佰成團隊相信，唯有結合專業醫療、誠摯關懷與持續陪伴，才能真正守護毛孩的健康。我們將持續精進，成為您與毛孩值得信賴的醫療後盾。
           </p>
         </div>
-
 
         {/* 🔹 我們的優勢 */}
         <div className="bg-white shadow-xl rounded-xl p-8 mt-12">
@@ -148,13 +145,13 @@ export default function Home() {
           <div className="text-lg flex flex-col items-center gap-2">
             <p className="flex items-center gap-2">
               <FaMapMarkerAlt className="text-blue-500" />
-              地址：701台南市東區東寧路331號
+              地址：831高雄市大寮區鳳林三路674號
             </p>
             <p className="flex items-center gap-2">
               <FaPhone className="text-green-500" />
-              電話：06-2385816
+              電話：07-7867568
             </p>
-            <p className="flex items-center gap-1 whitespace-nowrap">
+            {/* <p className="flex items-center gap-1 whitespace-nowrap">
               <span>LINE線上諮詢：</span>
               <a
                 href="https://line.me/R/ti/p/@kkp1060t"
@@ -164,7 +161,7 @@ export default function Home() {
               >
                 @kkp1060t
               </a>
-            </p>
+            </p> */}
           </div>
 
           {/* 門診時間 */}
@@ -172,12 +169,12 @@ export default function Home() {
             <div className="flex-1 text-lg text-gray-800">
               <h3 className="text-2xl font-bold text-[#5A4032] mb-4">門診時間</h3>
               <ul className="leading-relaxed space-y-1">
-                <li>星期一：10:30 – 20:00</li>
-                <li>星期二：10:30 – 20:00</li>
-                <li>星期三：10:30 – 20:00</li>
-                <li>星期四：10:30 – 20:00</li>
-                <li>星期五：10:30 – 20:00</li>
-                <li>星期六：10:30 – 20:00</li>
+                <li>星期一：09:00 – 12:30, 15:00 – 18:00, 18:30 – 21:00</li>
+                <li>星期二：09:00 – 12:30, 15:00 – 18:00, 18:30 – 21:00</li>
+                <li>星期三：09:00 – 12:30, 15:00 – 18:00, 18:30 – 21:00</li>
+                <li>星期四：09:00 – 12:30, 15:00 – 18:00, 18:30 – 21:00</li>
+                <li>星期五：09:00 – 12:30, 15:00 – 18:00, 18:30 – 21:00</li>
+                <li>星期六：09:00 – 12:30, 15:00 – 18:00</li>
                 <li className="text-red-700 font-bold">星期日：休息</li>
               </ul>
             </div>
@@ -188,9 +185,9 @@ export default function Home() {
         {/* 🔹 Google 地圖嵌入 */}
         <div className="w-full flex justify-center mt-8">
           <iframe
-            title="Google Maps - 宏愛動物醫院"
+            title="Google Maps - 佰成動物醫院"
             className="w-full max-w-[1100px] h-[450px] rounded-lg shadow-lg border-0"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.91216180514!2d120.2278546!3d22.9902573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e77f00a3c3c5d%3A0x9374c24e03593dff!2z5a6P5oSb5YuV54mp6Yar6ZmiLeeKrOiyk-WwiOenkemGq-eZguOAgeeKrOiyk-e-juWuueOAgeeKrOiyk-iXpeWxgO-8iOaXqeS4iuaZguauteeci-iouu-8jOiri-WFiOaPkOWJjemgkOe0hO-8iQ!5e0!3m2!1szh-TW!2stw!4v1750209555840!5m2!1szh-TW!2stw"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.1811877896253!2d120.39380659999999!3d22.6097082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e1b9cf4841ced%3A0x5451d924305274!2z5L2w5oiQ5YuV54mp6Yar6Zmi!5e0!3m2!1szh-TW!2stw!4v1750299167664!5m2!1szh-TW!2stw"
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
