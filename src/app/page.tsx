@@ -10,8 +10,8 @@ import {
 } from "react-icons/fa";
 
 export default function Home() {
-  const router = useRouter(); // ✅ 用於導航到獨立頁面
-  
+  const router = useRouter();
+
   return (
     <main className="bg-[#E6D6CC] text-gray-900">
       {/* 🔹 關於我們 */}
@@ -20,14 +20,14 @@ export default function Home() {
           <FaPaw className="text-yellow-500" /> 關於我們
         </h2>
         <div className="bg-white shadow-xl rounded-xl p-8 mt-6">
-         <p className="text-lg text-gray-700 leading-relaxed">
-            佰成動物醫院致力於為每一位需要協助的毛孩提供最專業、最細緻的醫療照護。我們秉持著尊重生命的初心，期望每一次門診都能帶給毛孩真正的幫助與改善，協助牠們邁向更健康、更有品質的生活。
+          <p className="text-lg text-gray-700 leading-relaxed">
+            佰成動物醫院成立於 2012 年，致力於為大寮區提供優質的犬貓小動物醫療服務。
             <br /><br />
-            為實現這個目標，我們重視與飼主及毛孩之間的信任與溝通，並努力建立長期且穩定的醫療夥伴關係。透過醫師的專業判斷與用心關懷，讓每一次就診不僅是治療，更是一段攜手守護生命的旅程。
-            <br /><br />
-            佰成團隊相信，唯有結合專業醫療、誠摯關懷與持續陪伴，才能真正守護毛孩的健康。我們將持續精進，成為您與毛孩值得信賴的醫療後盾。
+            我們以「人為本、有情萬物為念」為核心理念，並以親切溫暖的態度提供服務。
+            「愛、關懷、服務、奉獻」是本院的經營宗旨，期盼每一位來院診治的小動物都能獲得完善而細緻的醫療照護。
           </p>
         </div>
+
 
         {/* 🔹 我們的優勢 */}
         <div className="bg-white shadow-xl rounded-xl p-8 mt-12">
@@ -69,11 +69,11 @@ export default function Home() {
             <FaPaw className="text-yellow-500" /> 院長資訊
           </h2>
           <p className="text-lg text-gray-700 leading-relaxed">
-            院長祝偉鈞醫師畢業於國立嘉義大學獸醫學院，擁有多年小動物臨床經驗，從基礎內外科到進階專科診療，皆有深厚實力。職涯歷練橫跨北中知名院所，曾任台北市和欣動物醫院、劍橋動物醫院、台中市東南動物醫院主治獸醫，亦擔任馬汀體系威爾斯分院院長，具備豐富的實務與醫療團隊管理經驗。
+            吳玟軒院長擁有堅實的學術背景，畢業自國立嘉義農專獸醫科、國立屏東科技大學獸醫學系，並進一步取得國立台灣大學獸醫學研究所碩士學位。多年來，他始終秉持著對動物深切的關懷與對醫療專業的高度要求，致力於提供細緻、誠摯且以毛孩福祉為核心的診療服務。
             <br /><br />
-            祝院長專長涵蓋犬貓內外科診療、心臟內科、腫瘤科、牙科治療、預防醫學健檢，以及母浪貓側腹微創絕育手術等，尤注重醫療的精準性與人道關懷。他始終堅信：「醫療不是單向的指導，而是與飼主攜手做出的每一個選擇。」因此在診療過程中，總是以同理與耐心聆聽每一位飼主的聲音。
+            吳院長深信，動物醫療不僅是技術與知識的應用，更是與飼主、與毛孩之間建立信任與理解的過程。他以親切溫暖的態度接待每一位病患，耐心聆聽飼主的需求，並結合臨床經驗與科學依據，提供最合適的診療建議。
             <br /><br />
-            院長創立鈞懋動物醫院，正是為了實踐他對理想醫療環境的願景——一個兼具專業、信任與溫度的診療空間，讓每位毛孩在就醫的同時，也能感受到被溫柔對待的尊重與安心。
+            在他的帶領下，佰成動物醫院秉持「愛、關懷、服務、奉獻」的理念，持續精進醫療品質，期望成為每個家庭在毛孩健康旅程中最值得信賴的後盾。
           </p>
         </div>
       </section>
@@ -86,20 +86,40 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10 text-left">
           {[
             {
-              label: "寵物醫療",
-              treatments: ["提供內科、外科、眼科、牙科、皮膚科等全方位診療服務，守護毛孩健康。"],
+              label: "家庭醫學",
+              treatments: [
+                "針對犬貓常見疾病提供整合性診療服務，建立長期健康管理關係。",
+              ],
             },
             {
-              label: "寵物保健",
-              treatments: ["從疫苗、驅蟲、健康檢查到慢性病追蹤，打造全面的健康管理計畫。"],
+              label: "一般內科",
+              treatments: [
+                "從消化、內分泌、呼吸、泌尿等系統問題，提供全面診斷與治療。",
+              ],
             },
             {
-              label: "寵物美容",
-              treatments: ["提供洗澡、剪毛、專業造型等美容服務，讓毛孩清爽又舒適。"],
+              label: "外科",
+              treatments: [
+                "進行軟組織手術、腫瘤切除、骨科處置等手術，安全且專業。",
+              ],
             },
             {
-              label: "寵物百貨",
-              treatments: ["精選寵物日常用品與營養食品，滿足毛孩生活所需。"],
+              label: "皮膚科",
+              treatments: [
+                "針對搔癢、脫毛、皮膚過敏、感染等問題提供專業處理與追蹤。",
+              ],
+            },
+            {
+              label: "牙科",
+              treatments: [
+                "提供洗牙、牙科X光、拔牙等牙科相關治療，維護口腔健康。",
+              ],
+            },
+            {
+              label: "再生醫學治療",
+              treatments: [
+                "結合高濃度血小板血漿（PRP）、幹細胞等技術，促進組織修復與癒合。",
+              ],
             }
           ].map((service, index) => (
             <div
@@ -151,17 +171,6 @@ export default function Home() {
               <FaPhone className="text-green-500" />
               電話：07-7867568
             </p>
-            {/* <p className="flex items-center gap-1 whitespace-nowrap">
-              <span>LINE線上諮詢：</span>
-              <a
-                href="https://line.me/R/ti/p/@kkp1060t"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-700 underline hover:text-blue-900 transition"
-              >
-                @kkp1060t
-              </a>
-            </p> */}
           </div>
 
           {/* 門診時間 */}
